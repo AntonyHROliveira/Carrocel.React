@@ -130,7 +130,7 @@ export default function Home() {
       </Head>
       <div className={styles.page}>
         <main className={styles.main}>
-          <Splide options={{ type: 'loop' }}>{/* options={{ type: 'loop' }} => coloca um loop no container principal */}
+          <Splide options={{ type: 'loop', perPage: 2, autoplay: 'true', arrows: false, interval: 2000, speed: 10000}}>{/* options={{ type: 'loop' }} => coloca um loop no container principal */}
             <SplideSlide className={styles.item1}>
               <Image alt="Foto de um Bolo" src="/image1.jpg" width={500} height={500}
               style={{ objectFit: "cover" }} />
